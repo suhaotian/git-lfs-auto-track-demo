@@ -12,8 +12,8 @@ dependencies:
     specifier: ^3.0.1
     version: 3.0.1
   lfs-auto-track:
-    specifier: ^1.0.0
-    version: 1.0.0
+    specifier: ^1.0.4
+    version: 1.0.4
   lint-staged:
     specifier: ^15.2.0
     version: 15.2.0
@@ -186,8 +186,8 @@ packages:
     resolution: {integrity: sha512-RHxMLp9lnKHGHRng9QFhRCMbYAcVpn69smSGcq3f36xjgVVWThj4qqLbTLlq7Ssj8B+fIQ1EuCEGI2lKsyQeIw==}
     dev: false
 
-  /lfs-auto-track@1.0.0:
-    resolution: {integrity: sha512-WLTm1s82Z6vmpZUDLGRuC8648HsjhCqAQk9TXERqqStKosY3z4LtaRiQRWbfuzrUPfxSEctMw8xgIHXEKI3p4w==}
+  /lfs-auto-track@1.0.4:
+    resolution: {integrity: sha512-kfDSWQy4Z6xrk88fq/ZXri0S9ZjMsfyH4nM6OBhWiEG0ZD2fNBanpVeM4aeCqOWLcCMuL8u/m2JBWt6meaIrjQ==}
     hasBin: true
     dependencies:
       mime: 3.0.0
