@@ -11,6 +11,9 @@ dependencies:
   is-ci:
     specifier: ^3.0.1
     version: 3.0.1
+  lfs-auto-track:
+    specifier: ^1.0.0
+    version: 1.0.0
   lint-staged:
     specifier: ^15.2.0
     version: 15.2.0
@@ -183,6 +186,13 @@ packages:
     resolution: {integrity: sha512-RHxMLp9lnKHGHRng9QFhRCMbYAcVpn69smSGcq3f36xjgVVWThj4qqLbTLlq7Ssj8B+fIQ1EuCEGI2lKsyQeIw==}
     dev: false
 
+  /lfs-auto-track@1.0.0:
+    resolution: {integrity: sha512-WLTm1s82Z6vmpZUDLGRuC8648HsjhCqAQk9TXERqqStKosY3z4LtaRiQRWbfuzrUPfxSEctMw8xgIHXEKI3p4w==}
+    hasBin: true
+    dependencies:
+      mime: 3.0.0
+    dev: false
+
   /lilconfig@3.0.0:
     resolution: {integrity: sha512-K2U4W2Ff5ibV7j7ydLr+zLAkIg5JJ4lPn1Ltsdt+Tz/IjQ8buJ55pZAxoP34lqIiwtF9iAvtLv3JGv7CAyAg+g==}
     engines: {node: '>=14'}
@@ -240,6 +250,12 @@ packages:
     dependencies:
       braces: 3.0.2
       picomatch: 2.3.1
+    dev: false
+
+  /mime@3.0.0:
+    resolution: {integrity: sha512-jSCU7/VB1loIWBZe14aEYHU/+1UMEHoaO7qxCOVJOw9GgH72VAWppxNcjU+x9a2k3GSIBXNKxXQFqRvvZ7vr3A==}
+    engines: {node: '>=10.0.0'}
+    hasBin: true
     dev: false
 
   /mimic-fn@2.1.0:

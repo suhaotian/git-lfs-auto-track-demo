@@ -11,7 +11,8 @@
     "husky": "^9.0.7",
     "lint-staged": "^15.2.0",
     "prettier": "^3.2.4",
-    "is-ci": "^3.0.1"
+    "is-ci": "^3.0.1",
+    "lfs-auto-track": "^1.0.0"
   },
   "prettier": {
     "printWidth": 100,
@@ -22,7 +23,7 @@
   },
   "lint-staged": {
     "*": [
-      "node scripts/lfs.mjs 'jpg,jpeg,png,gif:100kb;*:1024kb'"
+      "pnpm auto-track-lfs 'jpg,jpeg,png,gif:100kb;*:1024kb'"
     ],
     "*.{ts,tsx,mts}": [
       "prettier --write",
