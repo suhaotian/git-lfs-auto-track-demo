@@ -1,0 +1,38 @@
+{
+  "name": "git-lfs-auto-track-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "is-ci || husky"
+  },
+  "dependencies": {
+    "husky": "^9.0.7",
+    "lint-staged": "^15.2.0",
+    "prettier": "^3.2.4",
+    "is-ci": "^3.0.1"
+  },
+  "prettier": {
+    "printWidth": 100,
+    "tabWidth": 2,
+    "singleQuote": true,
+    "trailingComma": "es5",
+    "bracketSameLine": true
+  },
+  "lint-staged": {
+    "*": [
+      "node scripts/lfs.mjs 'jpg,jpeg,png,gif:100kb;*:1024kb'"
+    ],
+    "*.{ts,tsx,mts}": [
+      "prettier --write",
+      "eslint --fix"
+    ],
+    "*.{md,css,js,mjs}": [
+      "prettier --write"
+    ]
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
